@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Welcome to Superloans</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="text" [(ngModel)] = "email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" [(ngModel)] = "password"></ion-input>
+        </ion-item>
+        <ion-item padding>
+            <button ion-button (click)="login()" block>Login</button>
+        </ion-item>
+    </ion-list>
+</ion-content>

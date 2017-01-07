@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      My Profile
+    </ion-card-header>
+    <ion-card-content>
+      <p><b>Name :</b> {{items.fname}} {{items.mname}} {{items.lname}}</p>
+      <p><b>Email :</b> {{items.email}}</p>
+      <p><b>Phone :</b> {{items.mobileno}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-img width="100%" src="../assets/image/home-design.png"></ion-img>
+  </ion-card>
+  <div padding>
+    <button ion-button full (click)='presentConfirm()' color="primary">Logout</button>
+  </div>
+</ion-content>

@@ -34,7 +34,8 @@ export class login {
           alert.present();
           }else{
             this.dc.setUserDetails(data[0]);
-            this.navCtrl.setRoot(MyApp);
+            location.reload();
+            //this.navCtrl.setRoot(MyApp);
           }
       });
       }else{

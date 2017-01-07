@@ -5,26 +5,29 @@ import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { Page3 } from '../pages/page3/page3';
 import { login } from '../pages/login/login';
+import { CalculatorPage } from '../pages/calculator/calculator';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    Page1,
-    Page2,
-    Page3,
-    login
-  ],
-  imports: [
-    IonicModule.forRoot(MyApp)
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    Page1,
-    Page2,
-    Page3,
-    login
-  ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+    declarations: [
+        MyApp,
+        Page1,
+        Page2,
+        Page3,
+        login,
+        CalculatorPage
+    ],
+    imports: [
+        IonicModule.forRoot(MyApp)
+    ],
+    bootstrap: [IonicApp],
+    entryComponents: [
+        MyApp,
+        Page1,
+        Page2,
+        Page3,
+        login,
+        CalculatorPage
+    ],
+    providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
